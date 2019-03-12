@@ -118,12 +118,10 @@ list-style-type: square;
 .contentsep_1 {
 clear: both;
 float: left;
-width: 200px;
 }
 
 .contentsep_2 {
 float: left;
-width: 970px;
 }
 
 
@@ -148,7 +146,6 @@ line-height: 22px;
 }
 
 #wrap {
-	width: 934px;
 	margin: 0 auto 0 auto;
 }
 
@@ -168,7 +165,6 @@ line-height: 22px;
 	font-size: 18px;
 	
 	height: 80px;
-	width: 450px;
 	padding-top: 25px;
 }
 
@@ -191,10 +187,9 @@ ul#navlist a:hover {
 }
 
 #nagy {
-	width: 934px;
 	height: 275px;
 	margin-bottom: 20px;
-	
+	display: flex;
 }
 
 #content {
@@ -203,7 +198,6 @@ ul#navlist a:hover {
 
 #borito {
 	float: left;
-	background-color: red;
 }
 
 #nagy {
@@ -212,7 +206,6 @@ ul#navlist a:hover {
 
 #boritoszoveg {
 		
-	width: 550px;
 	float: right;
 	padding-left: 30px;
 padding-right: 30px;
@@ -254,7 +247,6 @@ font-size: 26px;
 	font-size: 12px;
 	color: #fff;
 	height: 150px;
-	width: 934px;
 }
 
 #flogo {
@@ -263,7 +255,6 @@ font-size: 26px;
 
 #ftext {
 	float: right;
-	width: 400px;
 	text-align: right;
 }
 
@@ -272,22 +263,22 @@ font-size: 26px;
 }
 
 
-#harom .form-label-left {
+#harom .form-label-left,
+#rolunk-wrapper .form-label-left {
 	font-weight: normal;
 }
 
-#harom .form-label-right {
+#harom .form-label-right,
+#rolunk-wrapper .form-label-right {
 	font-weight: normal;
 }
 
 #hirl {
 	float: left;
-	width: 350px;
 }
 
 #mc_embed_signup {
 	float: left;
-	width:330px;
 	margin-bottom: 20px;
 }
 
@@ -315,4 +306,165 @@ float: right;
 
 .red {
     color: #ff0000;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.book {
+	display: flex;
+}
+
+.book-img {
+	min-width: 200px;
+}
+
+.book-img img {
+	max-width: 130px;
+}
+
+.wrap,
+#fwrap {
+	margin: 0 auto;
+	max-width: 964px;
+	padding: 0 15px;
+}
+
+.cover-img {
+	width: 315px;
+	height: 275px;
+}
+
+.cover-text {
+	width: 610px;
+}
+
+.order-btn {
+	display: block;
+	margin-top: 15px;
+}
+
+.form-label-right,
+.form-label-left {
+	width: 300px !important;
+}
+
+#hirl {
+	padding-right: 15px;
+}
+
+.email {
+	margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+	.book {
+		display: block;
+	}
+
+	.cover-img {
+		width: auto;
+	}
+
+	.cover-text {
+		width: auto;
+	}
+
+	.wrap {
+		padding: 0 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	#nagy {
+		display: block;
+		background: none;
+	}
+
+	#boritoszoveg {
+		padding: 0;
+		margin: 30px 0;
+	}
+
+	#boritoszoveg br {
+		display: none;
+	}
+
+	.form-label-right,
+	.form-label-left {
+		width: 100% !important;
+		display: block !important;
+		text-align: left !important;
+		padding-left: 0 !important;
+	}
+
+	.form-line {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.book-img {
+		text-align: center;
+	}
+
+	.mc-field-group {
+		margin-top: 10px;
+	}
+
+	.email {
+		border-width: 2px;
+		border-style: inset;
+		border-color: gray;
+		border-image: initial;
+		width: 200px;
+		margin-top: 10px;
+	}
+
+	#navi {
+		float: none;
+		padding: 0;
+		height: auto;
+	}
+
+	#navi ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	#navi ul li {
+		padding-right: 10px;
+	}
+
+	#logo {
+		float: none;
+	}
+
+	#fb {
+		float: none;
+	}
+
+	#header {
+		height: auto;
+	}
+
+	.textarea-parent {
+		display: block !important;
+	}
+
+	textarea {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-device-width: 550px) {
+	body {
+		font-size: inherit !important;
+	}
 }
